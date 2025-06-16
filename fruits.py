@@ -38,5 +38,6 @@ tree.plot_tree(tree_f, feature_names = attributes, class_names= tree_f.classes_ 
 
 # %%
 proba = tree_f.predict_proba([[1,1,1,1]])[0]
+
 pd.Series(proba, index=tree_f.classes_)
 # %%
